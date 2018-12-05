@@ -31,10 +31,10 @@ gulp.task('css', function () {
 /* input ： Suppose your layout width is 750px */
 
 .foo {
-  width: 750rpx;  
+  width: 750rpx;
   height: 150rpx;
   margin: 10rpx;
-  padding: 2px 15rpx 1px 30rpx; /* px will not be converted */
+  padding: 1rpx 15rpx 1px 30rpx; /* 1rpx will be converted any way */
   border: 4rpx solid gray;
   font-size: 15rpx;
   line-height: 14rpx;
@@ -49,12 +49,13 @@ gulp.task('css', function () {
   line-height: 14px;
 }
 
-@media (min-width: 750rpx) {  /* px is recommended */
+@media (min-width: 750rpx) {  /* suggest use px */
   .foo {
     font-size: 16rpx;
     line-height: 15rpx;
   }
 }
+
 
 /* output */
 
@@ -62,7 +63,7 @@ gulp.task('css', function () {
   width: 100vw;
   height: 20vw;
   margin: 1.33333vw;
-  padding: 2px 2vw 1px 4vw; /* px will not be converted */
+  padding: 0.13333vw 2vw 1px 4vw; 
   border: 0.53333vw solid gray;
   font-size: 2vw;
   line-height: 1.86667vw;
@@ -73,14 +74,14 @@ gulp.task('css', function () {
   margin: 10px;
   padding: 2px 15px 1px 16px;
   border: 1px solid gray;
-  font-size: 14px;  /* px will not be converted */
+  font-size: 14px;  
   line-height: 14px;
 }
 
-@media (min-width: 100vw) { /* if use rpx and set mediaQuery===true */
+@media (min-width: 100vw) {  /* if use rpx and set mediaQuery===true */
   .foo {
     font-size: 2.13333vw;
-    line-height: 2.13333vw;
+    line-height: 2vw;
   }
 }
 

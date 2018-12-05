@@ -2,7 +2,7 @@
   width: 750rpx;
   height: 150rpx;
   margin: 10rpx;
-  padding: 2px 15rpx 1px 30rpx; /* px will not be converted */
+  padding: 1rpx 15rpx 1px 30rpx; /* 1rpx will be converted any way */
   border: 4rpx solid gray;
   font-size: 15rpx;
   line-height: 14rpx;

@@ -2,7 +2,7 @@
   width: 100vw;
   height: 20vw;
   margin: 1.33333vw;
-  padding: 2px 2vw 1px 4vw; /* px will not be converted */
+  padding: 0.13333vw 2vw 1px 4vw; /* 1rpx will be converted at the same time */
   border: 0.53333vw solid gray;
   font-size: 2vw;
   line-height: 1.86667vw;
@@ -17,9 +17,9 @@
   line-height: 14px;
 }
 
-@media (min-width: 100vw) { /* if use rpx and set mediaQuery===true */
+@media (min-width: 100vw) {  /* suggest use px */
   .foo {
     font-size: 2.13333vw;
-    line-height: 2.13333vw;
+    line-height: 2vw;
   }
 }
