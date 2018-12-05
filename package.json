@@ -32,5 +32,8 @@
   "files": [
     "index.js"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "postcss": "^7.0.6"
+  }
 }

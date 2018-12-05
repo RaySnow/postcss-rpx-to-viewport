@@ -15,7 +15,7 @@ function generateReplacement(layoutWidth, unitPrecision, outputUnit) {
   return function (m, $1) {
     if (!$1) return m;
     var pixels = parseFloat($1);
-    return toFixed((pixels / (layoutWidth / 2) * 100), unitPrecision) + outputUnit;
+    return toFixed((pixels / (layoutWidth) * 100), unitPrecision) + outputUnit;
   };
 }
 
@@ -34,7 +34,7 @@ module.exports = postcss.plugin('postcss-rpx-to-viewport', function (options) {
     root.walkRules(function (rule) {
       rule.walkDecls(function (decl) {
         if (decl.value.indexOf(opts.targetUnit) === -1) return;
-        decl.value = decl.value.replace(pxRegex, generateReplacement(opts.layoutWidth, opts.unitPrecision, outputUnit));
+        decl.value = decl.value.replace(pxRegex, generateReplacement(opts.layoutWidth, opts.unitPrecision, opts.outputUnit));
       })
     });
     if (opts.mediaQuery) {

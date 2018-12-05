@@ -1,0 +1,25 @@
+.foo {
+  width: 750rpx;
+  height: 150rpx;
+  margin: 10rpx;
+  padding: 2px 15rpx 1px 30rpx; /* px will not be converted */
+  border: 4rpx solid gray;
+  font-size: 15rpx;
+  line-height: 14rpx;
+}
+
+.bar {
+  width: 100px;
+  margin: 10px;
+  padding: 2px 15px 1px 16px;
+  border: 1px solid gray;
+  font-size: 14px;  /* px will not be converted */
+  line-height: 14px;
+}
+
+@media (min-width: 750rpx) {  /* suggest use px */
+  .foo {
+    font-size: 16rpx;
+    line-height: 15rpx;
+  }
+}
