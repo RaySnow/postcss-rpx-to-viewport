@@ -1,5 +1,3 @@
-'use strict';
-
 var fs = require('fs');
 var postcss = require('postcss');
 var rpxToViewport = require('../index');
@@ -13,5 +11,4 @@ fs.writeFile('output.css', processedCss, function (err) {
   if (err) {
     throw err;
   }
-  console.log('File with viewport units written.');
 });
