@@ -1,0 +1,36 @@
+{
+  "name": "rpx-to-viewport",
+  "version": "0.0.1",
+  "title": "a plugin for PostCSS， convert rpx units (h5/mini-program/mpvue) to viewport units (vw or vmin vmax vh)",
+  "description": "a plugin for PostCSS， convert rpx units (h5/mini-program/mpvue) to viewport units (vw or vmin vmax vh)",
+  "homepage": "https://github.com/RaySnow/vw-polyfill",
+  "author": {
+    "name": "hupo@fanhaoyue.com",
+    "url": "https://github.com/RaySnow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RaySnow/postcss-rpx-to-viewport.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vw",
+    "vh",
+    "vmin",
+    "vmax",
+    "px",
+    "postcss",
+    "rpx-to-viewport",
+    "rpx-to-vw",
+    "rpxToViewport",
+    "rpx2viewport",
+    "rpxToVw",
+    "rpx2vw",
+    "viewport"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {}
+}
