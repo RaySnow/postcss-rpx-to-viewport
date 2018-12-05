@@ -3,7 +3,7 @@ A plugin for PostCSS. Convert rpx units (h5/mini-program/mpvue) to viewport unit
 
 ## purpose
 1. for h5、mini-program、mpvue and so on
-2. write css unit the same as your design daft   (Example: 750 layout = 750rpx)
+2. write css unit the same as your layout (Example: 750px width layout = 750rpx)
 
 ## Usage 
 
