@@ -2,8 +2,8 @@
   width: 100vw;
   height: 20vw;
   margin: 1.33333vw;
-  padding: 0.13333vw 2vw 1px 4vw; /* 1rpx will be converted at the same time */
-  border: 0.53333vw solid gray;
+  padding: 6px 0.8vw 6px 0.8vw; /* all rpx will be converted */
+  border: 4px solid gray;   /* px will not be converted */
   font-size: 2vw;
   line-height: 1.86667vw;
 }
