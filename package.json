@@ -1,6 +1,6 @@
 {
   "name": "rpx-to-viewport",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "title": "a plugin for PostCSS， convert rpx units (h5/mini-program/mpvue) to viewport units (vw or vmin vmax vh)",
   "description": "a plugin for PostCSS， convert rpx units (h5/mini-program/mpvue) to viewport units (vw or vmin vmax vh)",
   "homepage": "https://github.com/RaySnow/vw-polyfill",

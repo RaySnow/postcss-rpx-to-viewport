@@ -7,6 +7,8 @@ A plugin for PostCSS. Convert rpx units (h5/mini-program/mpvue) to viewport unit
 
 ## Usage 
 
+npm install postcss-rpx-to-viewport --save-dev
+
 ### Use with gulp
 
 ```js
@@ -27,7 +29,9 @@ gulp.task('css', function () {
 ### Use with webpack & vue
 
 ```js
-var rpxToViewport = require('postcss-rpx-to-viewport');
+    var rpxToViewport = require('postcss-rpx-to-viewport');
+    
+    // webpack config: 
     module: {
         rules: [
             {
@@ -51,7 +55,9 @@ var rpxToViewport = require('postcss-rpx-to-viewport');
 ### Use with webpack & react
 
 ```js
-var rpxToViewport = require('postcss-rpx-to-viewport');
+    var rpxToViewport = require('postcss-rpx-to-viewport');
+
+    // webpack config: 
     module: {
       postcss: function () {
           return [rpxToViewport()];
