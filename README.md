@@ -24,6 +24,41 @@ gulp.task('css', function () {
 });
 ```
 
+### Use with webpack & vue
+
+```js
+var rpxToViewport = require('postcss-rpx-to-viewport');
+    module: {
+        rules: [
+            {
+                test: /\.vue$/,
+                use: [
+                    {
+                        loader: 'vue-loader',
+                        options: {
+                            postcss: [
+                                rpxToViewport()
+                            ],
+                        }
+                    }
+                ],
+
+            }
+        ]
+    }    
+```
+
+### Use with webpack & react
+
+```js
+var rpxToViewport = require('postcss-rpx-to-viewport');
+    module: {
+      postcss: function () {
+          return [rpxToViewport()];
+      },
+    }    
+```
+
 ## Example
 
 ```css
@@ -112,7 +147,3 @@ Default:
 
 [MIT License](http://opensource.org/licenses/mit-license).
 
-
-## TODO
-
-Use with webpack（vue、react）
